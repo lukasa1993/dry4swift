@@ -1,13 +1,9 @@
 # dry4swift
 
-Use this command as the Swift duplication gate in SwarmForge.
+Use `dry4swift` for Swift duplication verification.
 
-## Install
-
-```bash
-python -m pip install --upgrade "git+https://github.com/lukasa1993/dry4swift.git"
-```
-
-## Verify
-
-Read `README.md`, inspect `dry4swift --help`, and run the command from the project root. Keep generated reports under `target/` and do not commit them.
+1. Run `dry4swift --help` before first use.
+2. Start with `--min-tokens 30`.
+3. Use `--fail` for the quality gate.
+4. Treat exit `1` as a parser or execution failure.
+5. Treat exit `2` as a duplication failure.

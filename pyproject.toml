@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dry4swift"
+version = "0.1.0"
+description = "Duplication analysis for Swift projects"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "Luka Dodelia"}]
+keywords = ["swarmforge", "quality", "testing"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+]
+
+[project.scripts]
+dry4swift = "dry4swift.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
